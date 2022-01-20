@@ -3,6 +3,7 @@ import Head from "next/head";
 import EventList from "../../components/events/event-list";
 import EventsSearch from "../../components/events/events-search";
 import { getAllEvents } from "../../helpers/api-util";
+import NewsletterRegistration from '../components/input/newsletter-registration';
 
 const AllEventsPage = (props) => {
   const router = useRouter();
@@ -23,6 +24,7 @@ const AllEventsPage = (props) => {
         />
       </Head>
       <EventsSearch onSearch={findEventsHandler} />
+      <NewsletterRegistration />
       <EventList items={events} />
     </div>
   );
