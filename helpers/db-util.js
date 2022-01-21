@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 
 export async function connectDatabase() {
   const client = await MongoClient.connect(
-    "INSIRA_SUA_CHAVE_AQUI"
+    "CHAVE_AQUI"
   );
 
   return client;
